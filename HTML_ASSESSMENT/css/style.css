@@ -1,0 +1,122 @@
+body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: paleturquoise;  
+}  
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width:100%;
+    max-width:1200px;
+    border:0px solid black;
+    margin: 0 auto;
+    padding:10px;
+}
+
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black; 
+    width: 100%; 
+} 
+.grid-child-element { 
+    margin: 10px; 
+    border: 1px solid lightslategray; 
+}
+
+.div-width-element {
+    width: 100%;
+}
+
+.p-element-style1 {
+    width:100%;
+    float: left;
+    padding:1px"
+}
+
+.p-element-style2 {
+    width:50%;
+    float: left;
+    padding:1px"
+}
+
+.input-text-style1 {
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.rounded-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url("../img/profile-picture.jpg");
+    background-position: 70% 50%;
+    background-size: 130%;
+}
+
+.bold-font {
+    font-weight : bold;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /*starting point for toggle style*/
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*ending point for toggle style*/

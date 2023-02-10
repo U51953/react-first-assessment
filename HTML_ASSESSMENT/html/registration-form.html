@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+    <meta charset="UTF-8" />
+    <script src="../js/inputvalidator.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+</head>  
+<body>  
+    <form action="userprofile.html">  
+        <div class="grid-container-element">
+            <div class="grid-child-element">
+                <div class="div-width-element"> 
+                    <p class="p-element-style2">
+                        <input type="text" class="input-text-style1" name="firstname" id="firstname" 
+                            placeholder= "Firstname"/> 
+                    </p> 
+                    <p class="p-element-style2">
+                        <input type="text" class="input-text-style1" name="lastname" id="lastname" 
+                            placeholder="Lastname" />
+                    </p> 
+                </div> 
+                <div class="div-width-element"> 
+                    <p class="p-element-style2">
+                        <input type="text" class="input-text-style1" name="dob" id="dob" 
+                            placeholder= "Date of Birth"/> 
+                    </p> 
+                    <p class="p-element-style2">
+                        <select name="gender" id="gender" class="input-text-style1">  
+                            <option value="">Gender</option>  
+                            <option value="M">Male</option>  
+                            <option value="F">Female</option>  
+                        </select>  
+                    </p> 
+                </div>
+                <div class="div-width-element"> 
+                    <p class="p-element-style1">
+                        <input type="text" class="input-text-style1" name="email" id="email" 
+                            placeholder= "Email" onblur="validateEmail()"/> 
+                    </p> 
+                </div> 
+                <div class="div-width-element">
+                    <p class="p-element-style1">
+                        <input type="text" class="input-text-style1" name="mobile" id="mobile" 
+                            placeholder="mobile" maxlength="10" onblur="validateNumber()"/> 
+                    </p>
+                </div>
+                <div class="div-width-element">
+                    <p class="p-element-style1">
+                        <textarea cols="50" rows="5" name="address" id="address" 
+                            placeholder="Address">  
+                        </textarea>  
+                    </p>
+                </div>
+                <div class="div-width-element">
+                    Indian:
+                    <label class="switch">
+                    
+                        <input id="on" type="checkbox">
+                        <div class="slider"></div>
+                    </label>
+                </div>
+                    
+                <div class="div-width-element">
+                    <p class="p-element-style1">
+                        Account Type:
+                        <input type="radio" value="regular" name="accType" checked > Regular   
+                        <input type="radio" value="premium" name="accType"> Premium 
+                    </p>
+                </div>
+                <div class="div-width-element"> 
+                    <p class="p-element-style1">
+                        <input type="text" class="input-text-style1" name="password" id="password" 
+                            placeholder="Password"/> 
+                    </p> 
+                </div>
+                <div class="div-width-element"> 
+                    <p class="p-element-style1">
+                        <input type="text" class="input-text-style1" name="confirmPassword" 
+                            id="confirmPassword" placeholder= "Confirm Password" 
+                            onblur="comparePassword()" /> 
+                    </p> 
+                </div>
+                <div class="div-width-element"> 
+                    <p class="p-element-style1">
+                        <input type="checkbox" name="confirm" id="confirm" 
+                        onClick="validate()">All the above mentioned information are correct
+                    </p>
+                </div>
+                <div class="div-width-element"> 
+                    <p class="p-element-style1">
+                        <button type="submit" id="submitbtn" class="input-text-style1"
+                        onclick="submitForm()" disabled>Create Account</button> 
+                    </p>
+                </div>
+                <div class="div-width-element"> 
+                    <p class="p-element-style1" style="text-align: center;">
+                        Already have an account <a href = "#" target="_blank">Login </a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="../img/registration.jpg" width="600" height="1000">
+            </div>
+        </div>
+    </form>  
+</body>  
+</html>  
